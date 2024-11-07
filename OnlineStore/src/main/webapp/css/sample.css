@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.brandText{
+  font-size: 45px;
+  line-height: 1;
+  color:#F7444E;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  transition:1s;
+}

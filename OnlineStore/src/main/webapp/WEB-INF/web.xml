@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>OnlineStore</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<!-- jsp registration -->
+
+	<servlet>
+		<servlet-name>admindashboard</servlet-name>
+		<jsp-file>/admin/index.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admindashboard</servlet-name>
+		<url-pattern>/admin/dashboard</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>adminaccountupdateform</servlet-name>
+		<jsp-file>/admin/accountupdateform.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminaccountupdateform</servlet-name>
+		<url-pattern>/admin/accountupdateform</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>adminproduct</servlet-name>
+		<jsp-file>/admin/product.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminproduct</servlet-name>
+		<url-pattern>/admin/product</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>product</servlet-name>
+		<jsp-file>/product.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>product</servlet-name>
+		<url-pattern>/product</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>error</servlet-name>
+		<jsp-file>/error.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>error</servlet-name>
+		<url-pattern>/error</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>success</servlet-name>
+		<jsp-file>/success.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>success</servlet-name>
+		<url-pattern>/success</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>adminorderdetail</servlet-name>
+		<jsp-file>/admin/orderdetail.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminorderdetail</servlet-name>
+		<url-pattern>/admin/orderdetail</url-pattern>
+	</servlet-mapping>
+</web-app>
